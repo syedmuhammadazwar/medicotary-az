@@ -1,23 +1,23 @@
 import { FaCheck } from "react-icons/fa6"
 
-const Button = ({ name = "", className = "", check = false, ...props }) => {
+const MyButton = ({
+  name = "",
+  className = "",
+  leftIcon = null,
+  rightIcon = null,
+}) => {
   return (
-    <span
-      className={`${className} text-base px-15 py-4 rounded-lg cursor-pointer flex items-center gap-2`}
-      {...props}
-    >
-      {check && (
-        <span>
-          <FaCheck />
-        </span>
-      )}
+    <button className={`${className} rounded-lg cursor-pointer`}>
+      {leftIcon && <span>{leftIcon}</span>}
 
       <span>{name}</span>
-    </span>
+
+      {rightIcon && <span>{rightIcon}</span>}
+    </button>
   )
 }
 
-export { Button }
+export { MyButton }
 
 // const LightPrimaryCheck = ({ name = "", className = "" }) => {
 //   return (

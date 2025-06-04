@@ -1,12 +1,18 @@
-import { Button } from "@/components/ui/button"
-import { FaCheck } from "react-icons/fa6"
+import NavbarHome from "./navbarHome"
+import HomeBody from "./homeBody"
+import HomeFooter from "./homeFooter"
 
 export default function HomePage() {
   return (
-    <div className="flex">
-      {/* <Button name="Button" check={false} className="primary text-white" /> */}
+    <>
+      {/* Navbar */}
+      <NavbarHome />
 
-      <Button leftIcon={<FaCheck />}>Primary</Button>
-    </div>
+      {/* Body */}
+      <HomeBody />
+
+      {/* footer */}
+      <HomeFooter />
+    </>
   )
 }
