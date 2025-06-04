@@ -25,7 +25,7 @@ export default function Register() {
       <div
         className="pt-12 px-12"
         style={{
-          background: "linear-gradient(to right, #fff 52%, #EBE8FC 48%)",
+          background: "linear-gradient(to left, #fff 52%, #EBE8FC 48%)",
         }}
       >
         <div className="container mx-auto px-5 flex items-center justify-end tracking-[-0.5px] gap-6 md:px-10">
@@ -44,13 +44,24 @@ export default function Register() {
       <div
         className="pt-12 px-12 min-h-screen flex flex-col justify-center"
         style={{
-          background: "linear-gradient(to right, #fff 52%, #EBE8FC 48%)",
+          background: "linear-gradient(to left, #fff 52%, #EBE8FC 48%)",
         }}
       >
         <div className="flex items-center justify-center gap-40">
+          {/* Girl Section */}
+          <div className="">
+            <Image
+              src="/register.png"
+              alt="main icon"
+              width={453}
+              height={426}
+              className="object-cover"
+            />
+          </div>
+
           {/* ForgotPassword */}
           <div className="mb-10 max-w-[592px]">
-            <h1 className="font-medium text-[64px] mb-11">Welcome back!</h1>
+            <h1 className="font-medium text-[64px] mb-11">Welcome</h1>
 
             <div className="max-w-[480px]">
               <form onSubmit={formik.handleSubmit}>
@@ -115,17 +126,6 @@ export default function Register() {
                 </Link>
               </div>
             </div>
-          </div>
-
-          {/* Girl Section */}
-          <div className="">
-            <Image
-              src="/login.png"
-              alt="main icon"
-              width={453}
-              height={426}
-              className="object-cover"
-            />
           </div>
         </div>
       </div>
