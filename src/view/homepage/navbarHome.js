@@ -14,7 +14,7 @@ export default function NavbarHome() {
             className="object-cover w-[56px] h-[50px]"
           />
 
-          <h1 className="font-bold text-4xl">Medicotary</h1>
+          <h1 className="font-bold tracking-[-0.5px] text-4xl">Medicotary</h1>
         </div>
 
         <div className="flex items-center gap-6">

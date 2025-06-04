@@ -7,7 +7,9 @@ const MyButton = ({
   rightIcon = null,
 }) => {
   return (
-    <button className={`${className} rounded-lg cursor-pointer`}>
+    <button
+      className={`${className} rounded-lg cursor-pointer flex items-center justify-center gap-2`}
+    >
       {leftIcon && <span>{leftIcon}</span>}
 
       <span>{name}</span>
