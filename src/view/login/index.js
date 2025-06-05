@@ -1,6 +1,8 @@
 "use client"
 
 import { useFormik } from "formik"
+import * as yup from "yup"
+
 import { FaGoogle } from "react-icons/fa"
 import { IoEyeOffOutline } from "react-icons/io5"
 
@@ -18,12 +20,17 @@ export default function Login() {
       // Handle login logic here
       // console.log(values)
     },
+
+    validationSchema: yup.object().shape({
+      email: yup.string().required().email(),
+      password: yup.string().required(),
+    }),
   })
 
   return (
     <>
       <div
-        className="pt-12 px-12"
+        className="pt-12"
         style={{
           background: "linear-gradient(to right, #fff 52%, #EBE8FC 48%)",
         }}
